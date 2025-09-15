@@ -73,6 +73,26 @@ Then create users and download client profiles from the Client UI at \`https://P
 > Tip: Use a static public IP or configure dynamic DNS. Persist data is stored in \`\${HOME}/openvpn-data\`.
 `,
   },
+
+  {
+    slug: 'bytebot-easy-setup',
+    name: 'Bytebot Easy setup',
+    image: '/image/bytebot.png',
+    tags: ['bytebot', 'bash', 'setup'],
+    markdown: `# Bytebot Easy setup
+
+Run the following commands on your server or local machine to quickly install Bytebot via the guided setup script:
+
+### use wsl in window and make sure docker running..
+\`\`\`bash
+curl -fsSL https://raw.githubusercontent.com/Myself-Ayush/bytebot-guided-setup/main/setup.sh -o setup.sh
+chmod +x setup.sh
+./setup.sh
+\`\`\`
+
+> Note: Review scripts before running them. The installer will guide you through required steps.
+`,
+  },
 ]
 
 
