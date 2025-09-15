@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  /* Tailwind utilities via @apply */
+  @apply bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-slate-200 antialiased;
+}
+
+/* Minimal readable markdown without typography plugin */
+.markdown {
+  @apply leading-relaxed text-slate-200/90;
+}
+.markdown h1 {
+  @apply text-4xl font-extrabold tracking-tight mb-6 mt-2 text-white;
+}
+.markdown h2 {
+  @apply text-2xl font-bold mt-10 mb-4 text-white;
+}
+.markdown h3 {
+  @apply text-xl font-semibold mt-8 mb-3 text-white;
+}
+.markdown p {
+  @apply my-4 text-slate-300;
+}
+.markdown ul {
+  @apply list-disc pl-6 my-4 space-y-2;
+}
+.markdown ol {
+  @apply list-decimal pl-6 my-4 space-y-2;
+}
+.markdown a {
+  @apply text-sky-400 hover:text-sky-300 underline underline-offset-4;
+}
+.markdown code {
+  @apply bg-slate-800/70 text-sky-300 px-1.5 py-0.5 rounded font-mono text-sm;
+}
+.markdown pre {
+  @apply bg-slate-900/70 p-4 rounded-lg overflow-x-auto my-6 border border-slate-800;
+}
+.markdown blockquote {
+  @apply border-l-4 border-slate-700 pl-4 italic text-slate-300/90 my-6;
+}
