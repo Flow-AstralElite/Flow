@@ -8,6 +8,13 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: 'docker-install',
+    name: 'Quick Docker Installation',
+    image: '/image/docker.png',
+    tags: ['docker', 'installation', 'debian'],
+    markdownFile: 'docker-install.md',
+  },
+  {
     slug: 'openvpn-access-server',
     name: 'OpenVPN  Server Setup (Docker)',
     image: '/image/openvpn.jpeg',

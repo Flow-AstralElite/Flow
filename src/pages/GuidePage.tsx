@@ -7,10 +7,12 @@ import CodeBlock from '../components/CodeBlock'
 
 // Import all markdown files
 import openvpnMarkdown from '../projects/markdown/openvpn-access-server.md?raw'
+import dockerInstallMarkdown from '../projects/markdown/docker-install.md?raw'
 
 // Create a map of markdown files
 const markdownFiles: Record<string, string> = {
   'openvpn-access-server.md': openvpnMarkdown,
+  'docker-install.md': dockerInstallMarkdown,
 }
 
 export default function GuidePage() {
